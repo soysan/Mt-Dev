@@ -7,18 +7,17 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Nextjs project</title>
-        <link
-          rel="icon"
-          href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/whatsapp/303/parrot_1f99c.png"
-        />
-        <main>Welcome</main>
-        <h2>Main Page</h2>
+        <link rel='icon' href='/hatching-chick.png' />
       </Head>
-      <Link href="/first">
-        <a>Go to firstPage</a>
-      </Link>
+      <main>
+        <h2>hello</h2>
+        <h2>Main Page</h2>
+        <Link href='/first'>
+          <a>Go to firstPage</a>
+        </Link>
+      </main>
     </>
   );
-}
+};
 
 export default Home;

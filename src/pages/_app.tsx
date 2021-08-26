@@ -1,20 +1,20 @@
-import type { AppProps } from 'next/app'
-import '@/styles/globals.css'
-import Head from 'next/head'
-import { StylesProvider } from '@material-ui/core'
-import { ThemeProvider as MaterialThemeProvider } from '@material-ui/styles'
-import { ThemeProvider as StyledThemeProvider } from 'styled-components'
-import CssBaseLine from '@material-ui/core/CssBaseline'
-import {theme} from '@/styles/colorTheme'
-import { useEffect } from 'react'
+import type { AppProps } from 'next/app';
+import '@/styles/globals.css';
+import Head from 'next/head';
+import { StylesProvider } from '@material-ui/core';
+import { ThemeProvider as MaterialThemeProvider } from '@material-ui/styles';
+import { ThemeProvider as StyledThemeProvider } from 'styled-components';
+import CssBaseLine from '@material-ui/core/CssBaseline';
+import { theme } from '@/styles/colorTheme';
+import { useEffect } from 'react';
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   useEffect(() => {
-    const jssStyles: Element | null = document.querySelector('#jss-server-side')
-    if(jssStyles){
+    const jssStyles: Element | null = document.querySelector('#jss-server-side');
+    if (jssStyles) {
       jssStyles.parentElement?.removeChild(jssStyles);
     }
-  }, [])
+  }, []);
 
   return (
     <>
@@ -24,8 +24,8 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
             <CssBaseLine />
             <Head>
               <meta
-                name="viewpoint"
-                content="width=device-width, initial-scale=1, shrink-to-fit=no"
+                name='viewpoint'
+                content='width=device-width, initial-scale=1, shrink-to-fit=no'
               />
               {/* <link ref='icon' href='/hatching-chick.png' /> */}
             </Head>
@@ -34,6 +34,6 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         </MaterialThemeProvider>
       </StylesProvider>
     </>
-  )
-}
-export default MyApp
+  );
+};
+export default MyApp;
