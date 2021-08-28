@@ -58,11 +58,11 @@ const clicker: ProjectProps = {
 };
 const portfolio: ProjectProps = {
   title: 'Mt-Dev',
-  img: '',
+  img: '/static/portfolio.png',
   stacks: ['Next.js', 'React', 'Material-UI', 'TypeScript', 'CSS', 'Html'],
   desc: 'このポートフォリオ。',
   githubUrl: 'https://github.com/soysan/Mt-Dev',
-  projectUrl: '',
+  projectUrl: 'https://mt-dev.vercel.app/',
 };
 
 export const ProjectsData: ProjectKey = {

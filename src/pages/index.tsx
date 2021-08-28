@@ -20,39 +20,41 @@ const Home: NextPage = () => {
         <link rel='icon' href='/static/hatching-chick.png' />
       </Head>
       <main>
-        <div style={{ padding: '1rem' }}>
-          <div
-            style={{
-              backgroundColor: theme.palette.primary.main,
-              borderRadius: '10px',
-              minWidth: '700px',
-              maxWidth: '1000px',
-            }}
-          >
-            <Typography variant='h1' style={{ textAlign: 'center' }}>
-              Mt-Dev
-            </Typography>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div style={{ padding: '1rem' }}>
+            <div
+              style={{
+                backgroundColor: theme.palette.primary.main,
+                borderRadius: '10px',
+                minWidth: '700px',
+                maxWidth: '1000px',
+              }}
+            >
+              <Typography variant='h1' style={{ textAlign: 'center' }}>
+                Mt-Dev
+              </Typography>
 
-            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-              {categoriesName.map((currName) => (
-                <MainCard key={currName} name={currName} />
-              ))}
-            </div>
-            <Grid container justifyContent='space-around'>
-              <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
-                <Typography variant='h4' component='h2' gutterBottom>
-                  Masayuki_Yamaguchi
-                </Typography>
-                <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-                  {thirdParties.map((currValue) => (
-                    <ThirdPartyButton name={currValue} key={currValue} />
-                  ))}
+              <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+                {categoriesName.map((currName) => (
+                  <MainCard key={currName} name={currName} />
+                ))}
+              </div>
+              <Grid container justifyContent='space-around'>
+                <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+                  <Typography variant='h4' component='h2' gutterBottom>
+                    Masayuki_Yamaguchi
+                  </Typography>
+                  <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+                    {thirdParties.map((currValue) => (
+                      <ThirdPartyButton name={currValue} key={currValue} />
+                    ))}
+                  </div>
                 </div>
-              </div>
-              <div>
-                <CustomImage src={'/static/beer.jpg'} alt='soysan' width={250} height={250} />
-              </div>
-            </Grid>
+                <div>
+                  <CustomImage src={'/static/beer.jpg'} alt='soysan' width={250} height={250} />
+                </div>
+              </Grid>
+            </div>
           </div>
         </div>
       </main>
