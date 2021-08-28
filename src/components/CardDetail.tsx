@@ -15,13 +15,13 @@ const StackChip = styled(Chip)`
 `;
 
 const LinkButton = styled(Button)`
-color: #fff;
-background-color: ${theme.palette.primary.dark}
-`
+  color: #fff;
+  background-color: ${theme.palette.primary.dark};
+`;
 const GitButton = styled(Button)`
-color: #fff;
-background-color: ${theme.palette.primary.light}
-`
+  color: #fff;
+  background-color: ${theme.palette.primary.light};
+`;
 
 const CardDetail: VFC<Props> = ({ name }) => {
   const { title, img, stacks, desc, githubUrl, projectUrl } = ProjectsData[name];
@@ -41,22 +41,11 @@ const CardDetail: VFC<Props> = ({ name }) => {
         <Typography variant='subtitle2' component='p' gutterBottom>
           {desc}
         </Typography>
-        <Grid
-          container
-          justifyContent='space-around'
-        >
-          <LinkButton
-            variant='contained'
-            href={projectUrl}
-            startIcon={<Share />}
-          >
+        <Grid container justifyContent='space-around'>
+          <LinkButton variant='contained' href={projectUrl} startIcon={<Share />}>
             Link
           </LinkButton>
-          <GitButton
-            variant='contained'
-            href={githubUrl}
-            startIcon={<Code />}
-          >
+          <GitButton variant='contained' href={githubUrl} startIcon={<Code />}>
             Code
           </GitButton>
         </Grid>
