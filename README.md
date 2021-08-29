@@ -1,6 +1,7 @@
 # Mt-Dev
+コンピュータサイエンスが学習できる[Recursion](https://recursionist.io/)で学びました
 ## Description
- 初Next.js、TypeScript project
+ 初Next.js、TypeScriptプロジェクト。
 
 ## URL
 [Mt-Dev](https://mt-dev.vercel.app/)
