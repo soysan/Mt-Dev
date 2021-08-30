@@ -44,6 +44,9 @@ const Home: NextPage = () => {
                   <Typography variant='h4' component='h2' gutterBottom>
                     Masayuki_Yamaguchi
                   </Typography>
+                  <Typography variant='subtitle2' component='p' gutterBottom>
+                    Recursionを使用してコンピュータサイエンスを基礎から学んでいます。
+                  </Typography>
                   <div style={{ display: 'flex', justifyContent: 'space-around' }}>
                     {thirdParties.map((currValue) => (
                       <ThirdPartyButton name={currValue} key={currValue} />
