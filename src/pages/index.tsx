@@ -47,7 +47,7 @@ const Home: NextPage = () => {
                   <Typography variant='subtitle2' component='p' gutterBottom>
                     Recursionを使用してコンピュータサイエンスを基礎から学んでいます。
                   </Typography>
-                  <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '1rem' }}>
                     {thirdParties.map((currValue) => (
                       <ThirdPartyButton name={currValue} key={currValue} />
                     ))}
