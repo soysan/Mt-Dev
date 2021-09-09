@@ -65,6 +65,15 @@ const portfolio: ProjectProps = {
   projectUrl: 'https://mt-dev.vercel.app/',
 };
 
+const ticTacToe: ProjectProps = {
+  title: 'Tic Tac Toe',
+  img: '/static/tictactoe.png',
+  stacks: ['Html', 'CSS', 'JavaScript'],
+  desc: '有名な三目並べです。ゲームを始める前に１列のマス数を入力でき、動的に増やせます。MVCに沿った設計。',
+  githubUrl: 'https://github.com/soysan/tic-tac-toe',
+  projectUrl: 'https://soysan.github.io/tic-tac-toe/'
+}
+
 export const ProjectsData: ProjectKey = {
   motivation: motivation,
   emotion: emotion,
@@ -74,6 +83,7 @@ export const ProjectsData: ProjectKey = {
   pomodoro: pomodoro,
   clicker: clicker,
   portfolio: portfolio,
+  ticTacToe: ticTacToe,
 };
 
 export const projectKeys: string[] = [
@@ -85,4 +95,5 @@ export const projectKeys: string[] = [
   'pomodoro',
   'clicker',
   'portfolio',
+  'ticTacToe'
 ];
