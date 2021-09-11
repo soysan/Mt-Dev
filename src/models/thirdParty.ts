@@ -18,8 +18,8 @@ const qiita: ThirdPartyProps = {
 
 const recursion: ThirdPartyProps = {
   title: 'Recursion',
-  url: 'https://recursionist.io/'
-}
+  url: 'https://recursionist.io/',
+};
 
 export const ThirdParties: ThirdProps = {
   twitter: twitter,
@@ -28,4 +28,4 @@ export const ThirdParties: ThirdProps = {
   recursion: recursion,
 };
 
-export const thirdParties: string[] = ['twitter', 'github', 'qiita','recursion'];
+export const thirdParties: string[] = ['twitter', 'github', 'qiita', 'recursion'];

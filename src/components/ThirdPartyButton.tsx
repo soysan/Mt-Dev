@@ -45,9 +45,9 @@ const ThirdPartyButton: VFC<Props> = ({ name }) => {
   return (
     <Link href={url}>
       <a>
-        <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           {button}
-        {title}
+          {title}
         </div>
       </a>
     </Link>
