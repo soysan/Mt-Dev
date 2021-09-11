@@ -71,8 +71,17 @@ const ticTacToe: ProjectProps = {
   stacks: ['Html', 'CSS', 'JavaScript'],
   desc: '有名な三目並べです。ゲームを始める前に１列のマス数を入力でき、動的に増やせます。MVCに沿った設計。',
   githubUrl: 'https://github.com/soysan/tic-tac-toe',
-  projectUrl: 'https://soysan.github.io/tic-tac-toe/'
-}
+  projectUrl: 'https://soysan.github.io/tic-tac-toe/',
+};
+
+const exchange: ProjectProps = {
+  title: 'Exchange System',
+  img: '/static/exchange.png',
+  stacks: ['Html', 'CSS', 'TypeScript', 'NES.css'],
+  desc: "CLI形式の為替変換アプリです。'ct' packageを使用して指定されたコマンドを実行します。[convert] [showAvailableLocales] [showDominations] が使用できるコマンドでそれぞれ引数があります。MVCに沿った設計。",
+  githubUrl: 'https://github.com/soysan/Exchange',
+  projectUrl: 'http://exchange-ashen.vercel.app/',
+};
 
 export const ProjectsData: ProjectKey = {
   motivation: motivation,
@@ -84,6 +93,7 @@ export const ProjectsData: ProjectKey = {
   clicker: clicker,
   portfolio: portfolio,
   ticTacToe: ticTacToe,
+  exchange: exchange,
 };
 
 export const projectKeys: string[] = [
@@ -95,5 +105,6 @@ export const projectKeys: string[] = [
   'pomodoro',
   'clicker',
   'portfolio',
-  'ticTacToe'
+  'ticTacToe',
+  'exchange',
 ];

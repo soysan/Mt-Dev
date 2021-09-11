@@ -17,7 +17,8 @@ type Stacks =
   | 'Swift'
   | 'CocoaPods'
   | 'Bootstrap'
-  | 'Next.js';
+  | 'Next.js'
+  | 'NES.css';
 
 export interface ProjectKey {
   [key: string]: ProjectProps;
