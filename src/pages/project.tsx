@@ -13,6 +13,7 @@ const CustomCard = styled(Card)`
   padding: 8px;
   box-shadow: 5px 5px 5px 3px ${theme.palette.primary.dark};
   background-color: #eceff1;
+  transition: 0.5s;
   &:hover {
     transform: scale(1.1);
   }

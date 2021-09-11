@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <div style={{ padding: '1rem' }}>
+          <div style={{ width: '1000px', height: '1000px', padding: '3rem 0' }}>
             <div
               style={{
                 backgroundColor: theme.palette.primary.main,
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
                 ))}
               </div>
               <Grid container justifyContent='space-around'>
-                <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+                <div style={{ margin: '4rem 0', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
                   <Typography variant='h4' component='h2' gutterBottom>
                     Masayuki_Yamaguchi
                   </Typography>
@@ -55,8 +55,8 @@ const Home: NextPage = () => {
                     ))}
                   </div>
                 </div>
-                <div>
-                  <CustomImage src={'/static/beer.jpg'} alt='soysan' width={250} height={250} />
+                <div style={{margin: '4rem 0'}}>
+                  <CustomImage src={'/static/beer.jpg'} alt='soysan' width={230} height={230} />
                 </div>
               </Grid>
             </div>
