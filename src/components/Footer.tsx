@@ -1,20 +1,19 @@
 import { Grid, Link, makeStyles } from '@material-ui/core';
 import { CloudQueue, GitHub, Twitter } from '@material-ui/icons';
 import React, { VFC } from 'react';
-import { theme } from '../styles/colorTheme';
 
 const styles = makeStyles({
   root: {
     padding: '2rem',
-    backgroundColor: theme.palette.primary.light,
+    backgroundColor: 'rgba(255,255,255, .1)',
     borderRadius: '0 0 10px 10px',
   },
   icons: {
     margin: '0 2rem',
-    color: '#37474f',
+    color: '#eceff1',
   },
   text: {
-    color: '#37474f',
+    fontWeight: 600,
   },
   link: {
     display: 'flex',
@@ -40,19 +39,19 @@ const Footer: VFC = () => {
           <Link href='https://twitter.com/soylove2'>
             <a className={classes.link}>
               <Twitter className={classes.icons} fontSize='large' />
-              <small>Twitter</small>
+              <small className={classes.text}>Twitter</small>
             </a>
           </Link>
           <Link href='https://github.com/soysan'>
             <a className={classes.link}>
               <GitHub className={classes.icons} fontSize='large' />
-              <small>Github</small>
+              <small className={classes.text}>Github</small>
             </a>
           </Link>
           <Link href='https://qiita.com/soysan'>
             <a className={classes.link}>
               <CloudQueue className={classes.icons} fontSize='large' />
-              <small>Qiita</small>
+              <small className={classes.text}>Qiita</small>
             </a>
           </Link>
         </Grid>

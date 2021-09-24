@@ -2,7 +2,7 @@ import { Grid, Typography } from '@material-ui/core';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { theme } from '../styles/colorTheme';
+// import { theme } from '../styles/colorTheme';
 import { categoriesName } from '../models/categories';
 import MainCard from '@/components/MainCard';
 import { thirdParties } from '../models/thirdParty';
@@ -12,6 +12,7 @@ import styled from 'styled-components';
 const CustomImage = styled(Image)`
   border-radius: 50%;
 `;
+
 const Home: NextPage = () => {
   return (
     <>
@@ -21,10 +22,22 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <div style={{ width: '1000px', height: '1000px', padding: '3rem 0' }}>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              width: '1000px',
+              height: '1000px',
+              padding: '3rem 0',
+            }}
+          >
             <div
               style={{
-                backgroundColor: theme.palette.primary.main,
+                background: 'rgba(255,255,255, 0.1)',
+                backdropFilter: 'blur(5px)',
+                WebkitBackdropFilter: 'blur(5px)',
+                boxShadow: '15px 15px 80px rgba(0,0,0, .6), -15px -10px 80px rgba(255,255,255, .6)',
                 borderRadius: '10px',
                 minWidth: '700px',
                 maxWidth: '1000px',
@@ -40,7 +53,14 @@ const Home: NextPage = () => {
                 ))}
               </div>
               <Grid container justifyContent='space-around'>
-                <div style={{ margin: '4rem 0', display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+                <div
+                  style={{
+                    margin: '4rem 0',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    flexDirection: 'column',
+                  }}
+                >
                   <Typography variant='h4' component='h2' gutterBottom>
                     Masayuki_Yamaguchi
                   </Typography>
@@ -55,7 +75,7 @@ const Home: NextPage = () => {
                     ))}
                   </div>
                 </div>
-                <div style={{margin: '4rem 0'}}>
+                <div style={{ margin: '4rem 0' }}>
                   <CustomImage src={'/static/beer.jpg'} alt='soysan' width={230} height={230} />
                 </div>
               </Grid>

@@ -1,16 +1,14 @@
 import { Grid, makeStyles, Typography } from '@material-ui/core';
 import Link from 'next/link';
 import React, { VFC } from 'react';
-import { theme } from '../styles/colorTheme';
 
 const styles = makeStyles({
   root: {
-    backgroundColor: theme.palette.primary.dark,
+    backgroundColor: 'rgba(255,255,255, .1)',
     borderRadius: '10px 10px 0 0',
   },
   text: {
-    margin: '16px',
-    color: '#eceff1',
+    margin: '2rem',
   },
 });
 
