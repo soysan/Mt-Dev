@@ -4,15 +4,14 @@ import React, { VFC } from 'react';
 import { Card, Grid, Typography } from '@material-ui/core';
 import { projectKeys } from '@/models/projects';
 import CardDetail from '@/components/CardDetail';
-import { theme } from '../styles/colorTheme';
 import styled from 'styled-components';
 
 const CustomCard = styled(Card)`
   max-width: 300px;
   margin: 8px;
   padding: 8px;
-  box-shadow: 5px 5px 5px 3px ${theme.palette.primary.dark};
-  background-color: #eceff1;
+  background: rgba(255,255,255, 0.2);
+  box-shadow: 5px 5px 10px rgba(0,0,0, .6), 5px 5px 10px rgba(255,255,255, .6);
   transition: 0.5s;
   &:hover {
     transform: scale(1.1);

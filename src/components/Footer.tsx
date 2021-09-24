@@ -5,7 +5,7 @@ import React, { VFC } from 'react';
 const styles = makeStyles({
   root: {
     padding: '2rem',
-    backgroundColor: 'rgba(255,255,255, .1)',
+    backgroundColor: 'rgba(255,255,255, .15)',
     borderRadius: '0 0 10px 10px',
   },
   icons: {

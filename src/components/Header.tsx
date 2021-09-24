@@ -4,7 +4,7 @@ import React, { VFC } from 'react';
 
 const styles = makeStyles({
   root: {
-    backgroundColor: 'rgba(255,255,255, .1)',
+    backgroundColor: 'rgba(255,255,255, .15)',
     borderRadius: '10px 10px 0 0',
   },
   text: {
