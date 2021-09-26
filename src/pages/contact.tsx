@@ -6,7 +6,7 @@ const Contact: VFC = () => {
   return (
     <>
       <Layout>
-        <Typography variant='h2' component='h1'>
+        <Typography variant='h2' component='h1' style={{height: '350px', display: 'flex', alignItems: 'center'}}>
           [Coming soon]
         </Typography>
       </Layout>

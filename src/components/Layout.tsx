@@ -5,7 +5,11 @@ import Footer from './Footer';
 const Layout: React.FC = ({ children }) => {
   return (
     <>
-      <div style={{ padding: '2rem' }}>
+      <div
+        style={{
+          padding: '2rem',
+        }}
+        >
         <div
           style={{
             borderRadius: '10px',

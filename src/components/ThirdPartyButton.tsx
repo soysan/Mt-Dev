@@ -12,7 +12,7 @@ const TwitterButton = styled(Button)`
   background-color: #1da1f2;
 `;
 const GithubButton = styled(Button)`
-  background-color: #f5f5f5;
+  background-color: #2D333B;
 `;
 const QiitaButton = styled(Button)`
   background-color: #6cc644;
@@ -47,7 +47,7 @@ const ThirdPartyButton: VFC<Props> = ({ name }) => {
       <a>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           {button}
-          {title}
+          <span>{title}</span>
         </div>
       </a>
     </Link>

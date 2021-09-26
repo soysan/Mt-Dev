@@ -2,7 +2,6 @@ import React, { VFC } from 'react';
 import { Categories } from '@/models/categories';
 import { Card, CardContent, CardMedia, Grid, Typography } from '@material-ui/core';
 import styled from 'styled-components';
-// import { theme } from '@/styles/colorTheme';
 import Link from 'next/link';
 
 const CustomCard = styled(Card)`
@@ -36,10 +35,10 @@ const MainCard: VFC<Props> = ({ name }) => {
                 component='img'
                 image={img}
                 title={title}
-                style={{ width: '100px', paddingTop: '1rem' }}
+                style={{ width: '100px', paddingTop: '1rem'  }}
               />
               <CardContent>
-                <Typography variant='h4' component='h5' style={{ color: '#eceff1' }}>
+                <Typography variant='h4' component='h4' style={{ color: '#eceff1' }}>
                   {title}
                 </Typography>
               </CardContent>

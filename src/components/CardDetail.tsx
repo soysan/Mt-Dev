@@ -9,7 +9,7 @@ type Props = {
 };
 
 const StackChip = styled(Chip)`
-  background-color: #998CBB;
+  background-color: #998cbb;
   opacity: 0.8;
   color: #eceff1;
   margin: 0 4px 8px 0;
@@ -18,12 +18,12 @@ const StackChip = styled(Chip)`
 const LinkButton = styled(Button)`
   color: #fff;
   opacity: 0.8;
-  background-color: #E57FB3;
+  background-color: #e57fb3;
 `;
 const GitButton = styled(Button)`
   color: #fff;
   opacity: 0.8;
-  background-color: #458ECF;
+  background-color: #458ecf;
 `;
 
 const CardDetail: VFC<Props> = ({ name }) => {
@@ -31,7 +31,7 @@ const CardDetail: VFC<Props> = ({ name }) => {
 
   return (
     <>
-      <CardMedia component='img' image={img} title={title} style={{ height: '200px'}} />
+      <CardMedia component='img' image={img} title={title} style={{ height: '200px' }} />
       <CardContent>
         <Typography variant='h5' component='h2' gutterBottom>
           {title}
