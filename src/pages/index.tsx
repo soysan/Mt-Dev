@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           container
           justifyContent='center'
           alignItems='center'
-          style={{ padding: '1rem' }}
+          style={{ padding: '1rem', minHeight: '100vh' }}
         >
           <div className={styles.container}>
             <Typography
