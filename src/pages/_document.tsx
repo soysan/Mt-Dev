@@ -15,7 +15,7 @@ class MyDocument extends Document {
     return (
       <Html lang='ja'>
         <Head>
-          <link rel='icon' href='/hatching-chick.png' />
+          <link rel='icon' href='/static/hatching-chick.png' />
         </Head>
         <body>
           <Main />
