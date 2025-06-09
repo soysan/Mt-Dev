@@ -7,7 +7,7 @@ const twitter: ThirdPartyProps = {
 };
 
 const github: ThirdPartyProps = {
-  title: 'Github',
+  title: 'GitHub',
   url: 'https://github.com/soysan',
 };
 

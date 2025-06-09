@@ -24,10 +24,10 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
             <CssBaseLine />
             <Head>
               <meta
-                name='viewpoint'
+                name='viewport'
                 content='width=device-width, initial-scale=1, shrink-to-fit=no'
               />
-              {/* <link ref='icon' href='/hatching-chick.png' /> */}
+              {/* <link rel='icon' href='/hatching-chick.png' /> */}
             </Head>
             <Component {...pageProps} />
           </StyledThemeProvider>
