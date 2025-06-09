@@ -45,7 +45,7 @@ const Footer: VFC = () => {
           <Link href='https://github.com/soysan'>
             <a className={classes.link}>
               <GitHub className={classes.icons} fontSize='large' />
-              <small className={classes.text}>Github</small>
+              <small className={classes.text}>GitHub</small>
             </a>
           </Link>
           <Link href='https://qiita.com/soysan'>

@@ -28,7 +28,7 @@ const ThirdPartyButton: VFC<Props> = ({ name }) => {
       <TwitterButton>
         <Twitter fontSize='large' />
       </TwitterButton>
-    ) : title === 'Github' ? (
+    ) : title === 'GitHub' ? (
       <GithubButton>
         <GitHub fontSize='large' />
       </GithubButton>
